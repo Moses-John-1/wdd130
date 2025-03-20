@@ -1,46 +1,61 @@
+
+:root {
+    --primary-color: darkblue;
+    --secondary-color: white;
+    --border-color: black;
+    --shadow-color: gray;
+    --background-dark: rgb(12, 7, 1);
+    --aside-border: rgb(0 0 0 / 0.2);
+    --default-padding: 10px;
+    --image-width: 200px;
+    --aside-width: 20rem;
+    --font-family: Arial, sans-serif;
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--default-padding);
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 main img {
-    width: 200px;
+    width: var(--image-width);
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 p {
-    padding: 10px;
+    padding: var(--default-padding);
 }
 
 main {
     max-width: 800px;
+    font-family: var(--font-family);
 }
 
 aside {
-    width: 20rem ;
+    width: var(--aside-width);
     margin: 1rem;
-    border: 2px dotted rgb(0 0 0 / 0.2);
+    border: 2px dotted var(--aside-border);
     padding: 1rem;
-    background-color: rgb(12, 7, 1);
-    color: white;
+    background-color: var(--background-dark);
+    color: var(--secondary-color);
     text-align: center;
 }
 
 aside img {
-    width: 200px;
+    width: var(--image-width);
     height: auto;
 }
 
@@ -50,6 +65,6 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000000;
+    border-top: 1px solid var(--border-color);
     text-align: center;
 }
