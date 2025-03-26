@@ -1,4 +1,4 @@
-/* 1. Define CSS Variables */
+
 :root {
     --primary-color: #072AC8;
     --secondary-color: #000000;
@@ -8,8 +8,9 @@
     --background-color: #f5f5f5;
 }
 
+
 * {
-    margin: 1%;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -21,10 +22,21 @@ body {
     color: var(--secondary-color);
 }
 
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+}
+
+
+nav {
+    text-align: center;
+    padding: 10px 0;
 }
 
 nav a {
@@ -37,6 +49,7 @@ nav a {
 nav a:hover {
     color: var(--accent1-color);
 }
+
 
 .hero {
     position: relative;
@@ -53,37 +66,42 @@ nav a:hover {
 
 .hero h1 {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    width: 100%;
+    width: 80%;
     transform: translate(-50%, -50%);
     background-color: var(--secondary-color);
-    opacity: 0.5;
+    opacity: 0.7;
     font-size: 2.5rem;
     color: var(--text-color);
     text-align: center;
+    padding: 10px;
+    border-radius: 10px;
 }
 
+/* 6. Hero Article */
 .hero article {
     position: absolute;
-    bottom: 30%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--secondary-color);
-    opacity: 0.7;
+    opacity: 0.8;
     color: var(--text-color);
-    padding: 10px;
+    padding: 15px;
     width: 70%;
     border-radius: 10px;
+    text-align: justify;
 }
 
 .hero article img {
     float: right;
-    width: 160px;
+    width: 150px;
     height: auto;
     margin-left: 10px;
     border-radius: 10px;
 }
+
 
 h2 {
     font-size: 1.8rem;
@@ -91,11 +109,31 @@ h2 {
     margin-top: 20px;
 }
 
+
 section img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+.adventure {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.adventure img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+
+.sociallinks {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .sociallinks a {
@@ -108,6 +146,7 @@ section img {
     margin: 5px;
 }
 
+
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -116,17 +155,25 @@ footer {
     margin-top: 20px;
 }
 
+
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2rem;
+        width: 90%;
     }
 
     .hero article {
-        width: 80%;
+        width: 85%;
         bottom: 5%;
+        padding: 10px;
     }
 
     .hero article img {
         width: 80px;
     }
+
+    .adventure img {
+        width: 45%;
+    }
 }
+
