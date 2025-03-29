@@ -31,6 +31,7 @@ header {
     padding: 10px 5%;
     border-bottom: 0px solid var(--accent1-color);
     max-width: 100%;
+    border:1px solid #ddd;
 }
 
 /* Logo Styling */
@@ -57,7 +58,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
 .container {
@@ -71,6 +72,9 @@ nav a:hover {
     width: 100%;
     max-height: 400px;
     overflow: hidden;
+    border:1px solid #ddd;
+    border-radius: 2px;
+
 }
 
 .hero img {
