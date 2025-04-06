@@ -1,11 +1,11 @@
 /* Define CSS Variables */
 :root {
-    --primary-color: #072AC8;
-    --secondary-color: #000000;
-    --accent1-color: #5CCAED;
-    --accent2-color: #1E96FC;
-    --text-color: #ffffff;
-    --background-color: #f5f5f5;
+    --primary-color: #1E2A78;
+    --secondary-color: #2E2E2E;
+    --accent1-color: #fff;
+    --accent2-color: #3A86FF;
+    --text-color: #F5F5F5;
+    --background-color: #F0F2F5;
 }
 
 * {
@@ -17,7 +17,7 @@
 body {
     font-family: 'PT Serif', serif;
     font-style: italic;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     color: var(--secondary-color);
 }
 
@@ -131,12 +131,12 @@ h2 {
     border-left: 5px solid #0077b6;
     border-radius: 20px;
     margin: 20px 0;
-    border:1px solid #ddd;
+    border:1px solid #312f2f;
 }
 
 .history h2 {
     text-align: center;
-    color:var(--background-color);
+    color:black;
     margin-bottom: 10px;
 }
 
@@ -221,4 +221,171 @@ footer p {
 .sociallinks img {
     width: 30px; 
     height: 30px;
+}
+
+/* === Contact page Section Styles === */
+.contact-info,
+.contact-form,
+.contact-gallery {
+    max-width:100%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    color: black;
+}
+
+/* Background Colors */
+.contact-info {
+    background-color: var(--secondary-color);
+    color: #fff;
+    
+}
+.contact-info h1{
+    color: black;
+    text-align: center;
+}
+
+
+
+.contact-info map{
+    align-items: flex-end;
+}
+.contact-gallery {
+    background-color: #072AC8;
+}
+
+/* Headings */
+.contact-info h2,
+.contact-form h2,
+.contact-gallery h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+
+/* === Contact Info Section === */
+.contact-info {
+    position: relative;
+    background-color: var(--accent1-color);
+    color: black;
+    text-align: left;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+   
+}
+
+
+.contact-info .Map iframe {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    padding: 10px;
+    border: 0px;
+    
+}
+
+/* === Contact Form Section === */
+.contact-form {
+    background-color: #fff;
+    color: var(--secondary-color);
+    text-align: left;
+    padding: 30px;
+    margin-left: 0; 
+    margin-right: auto;
+    width: auto;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:#F0F2F5;
+}
+
+.contact-form button {
+    background-color: var(--accent2-color);
+    color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+    border:#222;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+/* === Contact Employee Gallery Section === */
+.contact-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-gallery figure {
+    text-align: center;
+    width: 30%;
+}
+
+.contact-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: auto;
+}
+
+.contact-gallery figcaption {
+    font-size: 2rem;
+    color: var(--accent1-color);
+    margin-top: 10px;
+}
+
+
+/* === Responsive Layout for Large Screens === */
+@media (min-width: 900px) {
+    main.contact-layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 48%;
+    }
 }
