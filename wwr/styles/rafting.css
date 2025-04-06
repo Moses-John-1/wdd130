@@ -320,6 +320,15 @@ footer p {
     font-weight: bold;
     font-size: 1rem;
 }
+label {
+    margin-right: 20px;  /* Space between labels */
+    display: inline-block;  /* Make the labels inline */
+    font-size: 16px;  /* Optional: Adjust font size */
+}
+
+input[type="radio"] {
+    margin-right: 5px;  /* Space between the radio button and its label */
+}
 
 .contact-form input,
 .contact-form select,

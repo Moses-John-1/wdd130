@@ -41,33 +41,35 @@
 
         <!--Form part-->
         <section class="contact-form">
-            <form>
-              <label for="name">Your Name (required)</label>
-              <input type="text" id="name" name="name" required>
-          
-              <label for="email">Your Email (required)</label>
-              <input type="email" id="email" name="email" required>
-          
-              <label for="purpose">Purpose of the message (required)</label>
-              <label for="inquiry">General Inquiry</label>
+          <form>
+            <label for="name">Your Name (required)</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Your Email (required)</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label>Purpose of the message (required)</label>
+            <div class="radio-group">
               <input type="radio" id="inquiry" name="purpose" value="inquiry" required>
-              
-              <label for="reservation">Reservation Question</label>
+              <label for="inquiry">General Inquiry</label>
+        
               <input type="radio" id="reservation" name="purpose" value="booking" required>
-              
-              <label for="feedback">Website Suggestion</label>
+              <label for="reservation">Reservation Question</label>
+        
               <input type="radio" id="feedback" name="purpose" value="feedback" required>
-          
-              <label for="message">Your Message</label>
-              <textarea id="message" name="message" rows="5"></textarea>
-          
-              <label>
-                <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
-              </label>
-          
-              <button type="submit">Submit</button>
-            </form>
-          </section>
+              <label for="feedback">Website Suggestion</label>
+            </div>
+        
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+        
+            <label>
+              <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
+            </label>
+        
+            <button type="submit">Submit</button>
+          </form>
+        </section>
 
         <!--Contact gallary part-->
         <section class="contact-gallery">
