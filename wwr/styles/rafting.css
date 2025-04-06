@@ -196,6 +196,7 @@ footer {
     text-align: center;
     padding: 15px 0;
     margin-top: 20px;
+    transition: color 0.3s ease;
 }
 footer {
     display: flex;
@@ -204,6 +205,11 @@ footer {
     background-color: var(--secondary-color); 
     padding: 20px 20px;
     border: 1px solid #ddd;
+}
+
+
+footer a:hover {
+  color: rgb(54, 54, 235);
 }
 
 footer p {
@@ -321,13 +327,13 @@ footer p {
     font-size: 1rem;
 }
 label {
-    margin-right: 20px;  /* Space between labels */
-    display: inline-block;  /* Make the labels inline */
-    font-size: 16px;  /* Optional: Adjust font size */
+    margin-right: 20px;  
+    display: inline-block; 
+    font-size: 16px; 
 }
 
 input[type="radio"] {
-    margin-right: 5px;  /* Space between the radio button and its label */
+    margin-right: 5px;  
 }
 
 .contact-form input,
