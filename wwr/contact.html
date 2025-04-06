@@ -49,12 +49,14 @@
               <input type="email" id="email" name="email" required>
           
               <label for="purpose">Purpose of the message (required)</label>
-              <select id="purpose" name="purpose" required>
-                <option value="">Select</option>
-                <option value="inquiry">General Inquiry</option>
-                <option value="booking">Reservation Question</option>
-                <option value="feedback">Website Suggestion</option>
-              </select>
+              <label for="inquiry">General Inquiry</label>
+              <input type="radio" id="inquiry" name="purpose" value="inquiry" required>
+              
+              <label for="reservation">Reservation Question</label>
+              <input type="radio" id="reservation" name="purpose" value="booking" required>
+              
+              <label for="feedback">Website Suggestion</label>
+              <input type="radio" id="feedback" name="purpose" value="feedback" required>
           
               <label for="message">Your Message</label>
               <textarea id="message" name="message" rows="5"></textarea>
