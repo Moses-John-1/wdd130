@@ -1,6 +1,6 @@
 /* Define CSS Variables */
 :root {
-    --primary-color: #1E2A78;
+    --primary-color: #072AC8;;
     --secondary-color: #2E2E2E;
     --accent1-color: #fff;
     --accent2-color: #3A86FF;
@@ -217,6 +217,13 @@ footer p {
     font-size: 16px;
 }
 
+.tiny-img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 6px;
+  }
+
 .sociallinks {
     display: flex;
     gap: 10px; 
@@ -258,7 +265,7 @@ footer p {
     align-items: flex-end;
 }
 .contact-gallery {
-    background-color: #072AC8;
+    background-color: var(--primary-color)
 }
 
 /* Headings */
