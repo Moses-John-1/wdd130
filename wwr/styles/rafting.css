@@ -1,6 +1,6 @@
 /* Define CSS Variables */
 :root {
-    --primary-color: #072AC8;;
+    --primary-color: #072AC8;
     --secondary-color: #2E2E2E;
     --accent1-color: #fff;
     --accent2-color: #3A86FF;
@@ -191,25 +191,17 @@ figcaption {
 
 /* Footer Styling */
 footer {
-    background-color: #222;
+    background-color: #000;
     color: white;
     text-align: center;
     padding: 15px 0;
     margin-top: 20px;
     transition: color 0.3s ease;
-}
-footer {
     display: flex;
     justify-content: center; 
     align-items: center;
-    background-color: var(--secondary-color); 
     padding: 20px 20px;
     border: 1px solid #ddd;
-}
-
-
-footer a:hover {
-  color: rgb(54, 54, 235);
 }
 
 footer p {
@@ -217,13 +209,10 @@ footer p {
     font-size: 16px;
 }
 
-.tiny-img {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    margin-left: 6px;
-  }
 
+footer a {
+    text-align: left;
+}
 .sociallinks {
     display: flex;
     gap: 10px; 
@@ -236,7 +225,7 @@ footer p {
     height: 30px;
 }
 
-/* === Contact page Section Styles === */
+/* Contact page Section Styles */
 .contact-info,
 .contact-form,
 .contact-gallery {
@@ -248,7 +237,6 @@ footer p {
     color: black;
 }
 
-/* Background Colors */
 .contact-info {
     background-color: var(--secondary-color);
     color: #fff;
@@ -278,15 +266,14 @@ footer p {
     color: var(--text-color);
 }
 
-
-/* === Contact Info Section === */
+/* Contact Info Section */
 .contact-info {
     position: relative;
     background-color: var(--accent1-color);
     color: black;
     text-align: left;
-    padding: 30px;
-    width: 100%;
+    padding: 3px;
+    width: 90%;
     box-sizing: border-box;
 }
 
@@ -294,34 +281,39 @@ footer p {
     list-style: none;
     padding: 30px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .contact-info li {
     margin-bottom: 10px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
    
 }
 
 
 .contact-info .map iframe {
     width: 200px;
-    height: 200px;
+    height: 150px;
     border-radius: 30px;
-    padding: 1px;
+    padding: 2px;
     border: 0px;
+    box-shadow: 0 4px 8px rgba(18, 2, 248, 0.418);
     
 }
 
-/* === Contact Form Section === */
+/* Contact Form Section */
 .contact-form {
     background-color: #fff;
     color: var(--secondary-color);
     text-align: left;
-    padding: 30px;
-    margin-left: 0; 
+    padding: 10px;
+    margin-left: auto; 
     margin-right: auto;
-    width: auto;
+    width: 50%;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(19, 2, 248, 0.753);
+    
 }
 .contact-form form {
     display: flex;
@@ -331,7 +323,7 @@ footer p {
 
 .contact-form label {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 label {
     margin-right: 20px;  
@@ -369,8 +361,7 @@ input[type="radio"] {
     background-color: var(--secondary-color);
 }
 
-
-/* === Contact Employee Gallery Section === */
+/* Contact Employee Gallery Section */
 .contact-gallery {
     display: flex;
     justify-content: space-around;
@@ -398,16 +389,232 @@ input[type="radio"] {
 }
 
 
-/* === Responsive Layout for Large Screens === */
-@media (min-width: 900px) {
-    main.contact-layout {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+/* HOME PAGE ONLY STYLES */
+.adventure-hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
 
-    .contact-info,
-    .contact-form {
-        width: 48%;
-    }
+  
+  
+  .adventure-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  .adventure-text {
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    text-align: center;
+    
+  }
+  
+  .adventure-text h1 {
+    font-size: 2rem;
+    color:#fff;
+    text-shadow: 3px 3px 8px rgb(29, 4, 252);
+    border-radius: 10px;
+  }
+
+/* NEWSLETTER + CTA SECTION */
+.home-page .newsletter-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 5rem 0;
+    background-color: rgba(241, 246, 248, 0.979);
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    max-width: 90%;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.685);
 }
+
+.home-page .newsletter-form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+    left: 10%;
+}
+
+.home-page .newsletter-form label {
+    font-size: 1.0rem;
+    margin-bottom: -0.2rem;
+}
+
+.home-page .newsletter-form input {
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 180px;
+    height: 20px;
+    background-color:#ccc;
+}
+.cta-button:hover {
+    background-color: #00030f; 
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.home-page .newsletter-form button {
+    padding: 0.3rem 0.6rem;
+    background-color:#072AC8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.home-page .newsletter-form button:hover {
+    background-color: #001a80;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.home-page .cta-button {
+    padding: 0.9rem 1.2rem;
+    background-color:#072AC8;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    
+}
+
+/* GRID SECTION FOR IMAGES + TEXT */
+.home-page .offerings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    background-color: #072AC8;
+}
+
+.home-page .offer {
+    text-align: center;
+    width: 20%;
+    
+}
+
+.home-page .offer img {
+    width: 100%;
+    border-radius: 60px;
+    object-fit: cover;
+    height: auto;
+    margin-top: 10px;
+    
+}
+
+.home-page .offer figcaption {
+    font-size: 1rem;
+    color: var(--accent1-color);
+    margin-top: 1px;
+}
+
+/* Call-to-action button */
+.trip-cta {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.cta-button {
+    background-color: #0077cc;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #005fa3;
+}
+
+/* Trip cards layout */
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 8px rgba(23, 0, 151, 0.432);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.card p {
+    padding: 0 1rem;
+    color: #333;
+}
+
+/* Trip table */
+.trip-table {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.trip-table table {
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(8, 0, 116, 0.658);
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Headers */
+.trip-table th {
+    background-color: #0077cc;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem;
+    font-size: 1rem;
+    
+}
+
+/* Table Cells */
+.trip-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+    color: #0c0c0c;
+}
+
+/* Hover Effect */
+.trip-table tr:hover {
+    background-color: #0470eb3f;
+    transition: background-color 0.3s ease;
+}
+
+
