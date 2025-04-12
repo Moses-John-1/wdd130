@@ -415,7 +415,7 @@ input[type="radio"] {
   
   .adventure-text h1 {
     font-size: 2rem;
-    color:#fff;
+    color:#fae106;
     text-shadow: 3px 3px 8px rgb(29, 4, 252);
     border-radius: 10px;
   }
@@ -466,7 +466,7 @@ input[type="radio"] {
 
 .home-page .newsletter-form button {
     padding: 0.3rem 0.6rem;
-    background-color:#072AC8;
+    background-color:#0077cc;
     color: white;
     border: none;
     border-radius: 5px;
@@ -483,7 +483,7 @@ input[type="radio"] {
 
 .home-page .cta-button {
     padding: 0.9rem 1.2rem;
-    background-color:#072AC8;
+    background-color:#0077cc;
     color: white;
     font-weight: bold;
     border-radius: 5px;
